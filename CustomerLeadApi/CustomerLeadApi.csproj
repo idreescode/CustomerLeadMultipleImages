@@ -7,6 +7,121 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\com.chrome.devtools.json" />
+    <Content Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\package.json" />
+    <Content Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\_metadata.json" />
+    <Content Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps_ssr\package.json" />
+    <Content Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps_ssr\_metadata.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\.tsbuildinfo" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\angular-compiler.db" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\angular-compiler.db-lock" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_common.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_common.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_common_http.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_common_http.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_core.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_core.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_forms.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_forms.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_platform-browser.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_platform-browser.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_platform-browser_animations.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_platform-browser_animations.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_router.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\%40angular_router.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-A6X6XTPA.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-A6X6XTPA.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-EEM7SDWO.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-EEM7SDWO.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-ILZ35MBL.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-ILZ35MBL.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-KZL27SOF.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-KZL27SOF.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-OX2THR5V.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-OX2THR5V.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-XEQWXZSR.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-XEQWXZSR.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-Y3N4JTB5.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\chunk-Y3N4JTB5.js.map" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\rxjs.js" />
+    <None Include="customer-lead-app\.angular\cache\20.3.1\customer-lead-app\vite\deps\rxjs.js.map" />
+    <None Include="customer-lead-app\.git\COMMIT_EDITMSG" />
+    <None Include="customer-lead-app\.git\config" />
+    <None Include="customer-lead-app\.git\description" />
+    <None Include="customer-lead-app\.git\FETCH_HEAD" />
+    <None Include="customer-lead-app\.git\HEAD" />
+    <None Include="customer-lead-app\.git\hooks\applypatch-msg.sample" />
+    <None Include="customer-lead-app\.git\hooks\commit-msg.sample" />
+    <None Include="customer-lead-app\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="customer-lead-app\.git\hooks\post-update.sample" />
+    <None Include="customer-lead-app\.git\hooks\pre-applypatch.sample" />
+    <None Include="customer-lead-app\.git\hooks\pre-commit.sample" />
+    <None Include="customer-lead-app\.git\hooks\pre-merge-commit.sample" />
+    <None Include="customer-lead-app\.git\hooks\pre-push.sample" />
+    <None Include="customer-lead-app\.git\hooks\pre-rebase.sample" />
+    <None Include="customer-lead-app\.git\hooks\pre-receive.sample" />
+    <None Include="customer-lead-app\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="customer-lead-app\.git\hooks\push-to-checkout.sample" />
+    <None Include="customer-lead-app\.git\hooks\sendemail-validate.sample" />
+    <None Include="customer-lead-app\.git\hooks\update.sample" />
+    <None Include="customer-lead-app\.git\index" />
+    <None Include="customer-lead-app\.git\info\exclude" />
+    <None Include="customer-lead-app\.git\logs\HEAD" />
+    <None Include="customer-lead-app\.git\logs\refs\heads\master" />
+    <None Include="customer-lead-app\.git\objects\01\284d3c8a2472fe7a3fd83453a34b9fd8f491a8" />
+    <None Include="customer-lead-app\.git\objects\02\b20a8cb58ce3d40f9dfb37046093de67effbf9" />
+    <None Include="customer-lead-app\.git\objects\03\67e6c1086b20009833ae3eb9c74363351b9cca" />
+    <None Include="customer-lead-app\.git\objects\04\df34cfe778571fb16bc783911a7c060fa26f59" />
+    <None Include="customer-lead-app\.git\objects\0a\4aca9cfa4c229819b8031c454f6f9580b45c46" />
+    <None Include="customer-lead-app\.git\objects\10\d066f35a22aa8094b8d517242f3434a174f868" />
+    <None Include="customer-lead-app\.git\objects\12\ad6bd6aac431f8b5d14c5ea510f1f8a6e117dc" />
+    <None Include="customer-lead-app\.git\objects\22\38fd7e9e016a71b60a7e9ef847e7b38d04c0d3" />
+    <None Include="customer-lead-app\.git\objects\26\4f459bf8765c2eeb6a818ad09ad37a9cb4ff60" />
+    <None Include="customer-lead-app\.git\objects\29\6537c34fc32cf9467b613e6359be07480871ad" />
+    <None Include="customer-lead-app\.git\objects\2d\462b8f5f7dcc58ebead919349bb0615aebdf1f" />
+    <None Include="customer-lead-app\.git\objects\2e\06ce8de94def46ba840e312d7412c597c44770" />
+    <None Include="customer-lead-app\.git\objects\2f\89764c018df68c912167c9c986d0a0932b6d14" />
+    <None Include="customer-lead-app\.git\objects\30\7a6640fcc4f13fc2e0b9e9603f461ec44e82eb" />
+    <None Include="customer-lead-app\.git\objects\36\68e6511d21d7d9d515b91ce0b54be7e6efa550" />
+    <None Include="customer-lead-app\.git\objects\3d\eafc5d6f92ec952dc10bf24912fdc7dc20811e" />
+    <None Include="customer-lead-app\.git\objects\45\fbc514f4320dcb7680545b8094b532e76ec6ed" />
+    <None Include="customer-lead-app\.git\objects\4b\061a9f50a227cdcbbc83deebf40f498ec8b2d2" />
+    <None Include="customer-lead-app\.git\objects\4d\385f09f22563a4053a650e9742c6b5644ae638" />
+    <None Include="customer-lead-app\.git\objects\57\614f9c967596fad0a3989bec2b1deff33034f6" />
+    <None Include="customer-lead-app\.git\objects\59\21438a8b188795f470cdf15c045fbcce935c17" />
+    <None Include="customer-lead-app\.git\objects\5d\f75f9c838ea50f80ee4d5703b68dd8ac7243d4" />
+    <None Include="customer-lead-app\.git\objects\62\932aaddfcbf7a7633598f8df37ccd48a8ea1ff" />
+    <None Include="customer-lead-app\.git\objects\65\2b97b6e88d8bc244af6c0a1a4e7e936955f12e" />
+    <None Include="customer-lead-app\.git\objects\6a\21fbe0acac0931883637916ad18d60e76d0b75" />
+    <None Include="customer-lead-app\.git\objects\6c\30951248cbf1b27d96dfc40ef7f32be6b42fe6" />
+    <None Include="customer-lead-app\.git\objects\73\ed752b8e3b870fe33955433b81c1868727a362" />
+    <None Include="customer-lead-app\.git\objects\75\28372419131ced5c6c02f3207ddf4acd069361" />
+    <None Include="customer-lead-app\.git\objects\77\b374577de83b86d846eadda2dd17532d7dabaa" />
+    <None Include="customer-lead-app\.git\objects\84\f995257200cd6e539690cd3f6f557a2a61d18e" />
+    <None Include="customer-lead-app\.git\objects\90\d4ee0072ce3fc41812f8af910219f9eea3c3de" />
+    <None Include="customer-lead-app\.git\objects\92\5af837050a4abe679c5fea0df7e41faf6fc011" />
+    <None Include="customer-lead-app\.git\objects\92\de55e05c2732a7981859a6123d9b2a705c5b2f" />
+    <None Include="customer-lead-app\.git\objects\95\fae0ec2699db277cb2ba0bf3815da39ed6ecf6" />
+    <None Include="customer-lead-app\.git\objects\97\04165896b750a81b2d24e9cd44c1d0261d634f" />
+    <None Include="customer-lead-app\.git\objects\a2\98b5bd8796ac377fe9ed64caa249e24c7ec3b6" />
+    <None Include="customer-lead-app\.git\objects\a7\a74bfa30811fc609c0dbf094911e9574bfc3d1" />
+    <None Include="customer-lead-app\.git\objects\b3\f1ecf44a54372bf90afbb60491417242b8769c" />
+    <None Include="customer-lead-app\.git\objects\cb\b32e72120c9af933ff579ada95915da8d0ce39" />
+    <None Include="customer-lead-app\.git\objects\cc\7b141350ffde43afce3ec16ea4d7b5007cde2b" />
+    <None Include="customer-lead-app\.git\objects\dc\39edb5f23a35f788cba146dd7337127ba6c5ab" />
+    <None Include="customer-lead-app\.git\objects\dd\1c9d8d623efcef11c07b5ba26e92d0111cd247" />
+    <None Include="customer-lead-app\.git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include="customer-lead-app\.git\objects\f1\66060da1cbc9f216e9f5e99a1ef6074ce2a8f8" />
+    <None Include="customer-lead-app\.git\objects\f1\eaecdbd1f6b1a7782adf8d9bd34d261a5ab277" />
+    <None Include="customer-lead-app\.git\objects\f3\afb4ea5a0eb4c0fb2695b1b11ffb02246fe282" />
+    <None Include="customer-lead-app\.git\objects\f5\e5664d1abfdde419b8f87b5180b98003fd76af" />
+    <None Include="customer-lead-app\.git\refs\heads\master" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0-rc.1.25451.107" />
@@ -20,6 +135,12 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="customer-lead-app\.git\objects\info\" />
+    <Folder Include="customer-lead-app\.git\objects\pack\" />
+    <Folder Include="customer-lead-app\.git\refs\tags\" />
   </ItemGroup>
 
 </Project>
