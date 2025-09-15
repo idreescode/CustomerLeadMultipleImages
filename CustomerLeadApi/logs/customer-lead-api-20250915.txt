@@ -1,0 +1,278 @@
+2025-09-15 22:41:27.937 +05:00 [INF] Starting Customer Lead API
+2025-09-15 22:41:28.485 +05:00 [INF] Now listening on: https://localhost:7113
+2025-09-15 22:41:28.493 +05:00 [INF] Now listening on: http://localhost:5004
+2025-09-15 22:41:28.856 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 22:41:28.858 +05:00 [INF] Hosting environment: Development
+2025-09-15 22:41:28.860 +05:00 [INF] Content root path: D:\Development\Upwork Task\Backend\CustomerLeadApi
+2025-09-15 22:41:29.038 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7113/health - null null
+2025-09-15 22:41:29.307 +05:00 [INF] Executing endpoint 'HTTP: GET /health'
+2025-09-15 22:41:29.343 +05:00 [INF] Executed endpoint 'HTTP: GET /health'
+2025-09-15 22:41:29.405 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7113/health - 200 null application/json; charset=utf-8 385.47ms
+2025-09-15 22:41:34.035 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7113/api/contacts - null null
+2025-09-15 22:41:34.044 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:41:34.047 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:41:34.076 +05:00 [INF] Route matched with {action = "GetContacts", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[CustomerLeadApi.DTOs.ContactDTO]]]] GetContacts() on controller CustomerLeadApi.Controllers.ContactsController (CustomerLeadApi).
+2025-09-15 22:41:35.206 +05:00 [INF] Getting all contacts
+2025-09-15 22:41:36.108 +05:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Email], [c].[Name], [c].[Phone], [c].[Type], [c0].[Id], [c0].[ContactId], [c0].[ContentType], [c0].[FileName], [c0].[ImageData], [c0].[UploadedAt]
+FROM [Contacts] AS [c]
+LEFT JOIN [ContactImages] AS [c0] ON [c].[Id] = [c0].[ContactId]
+ORDER BY [c].[Id]
+2025-09-15 22:42:41.699 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[CustomerLeadApi.DTOs.ContactDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-15 22:42:41.715 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi) in 67632.5544ms
+2025-09-15 22:42:41.718 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:42:41.726 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7113/api/contacts - 200 null application/json; charset=utf-8 67691.3968ms
+2025-09-15 22:42:52.556 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7113/api/contacts - null null
+2025-09-15 22:42:52.564 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:42:52.565 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:42:52.567 +05:00 [INF] Route matched with {action = "GetContacts", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[CustomerLeadApi.DTOs.ContactDTO]]]] GetContacts() on controller CustomerLeadApi.Controllers.ContactsController (CustomerLeadApi).
+2025-09-15 22:42:52.693 +05:00 [INF] Getting all contacts
+2025-09-15 22:42:52.707 +05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Email], [c].[Name], [c].[Phone], [c].[Type], [c0].[Id], [c0].[ContactId], [c0].[ContentType], [c0].[FileName], [c0].[ImageData], [c0].[UploadedAt]
+FROM [Contacts] AS [c]
+LEFT JOIN [ContactImages] AS [c0] ON [c].[Id] = [c0].[ContactId]
+ORDER BY [c].[Id]
+2025-09-15 22:43:10.641 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7113/api/contacts - null null
+2025-09-15 22:43:10.652 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:43:10.655 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:43:10.657 +05:00 [INF] Route matched with {action = "GetContacts", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[CustomerLeadApi.DTOs.ContactDTO]]]] GetContacts() on controller CustomerLeadApi.Controllers.ContactsController (CustomerLeadApi).
+2025-09-15 22:43:10.698 +05:00 [INF] Getting all contacts
+2025-09-15 22:43:10.725 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Email], [c].[Name], [c].[Phone], [c].[Type], [c0].[Id], [c0].[ContactId], [c0].[ContentType], [c0].[FileName], [c0].[ImageData], [c0].[UploadedAt]
+FROM [Contacts] AS [c]
+LEFT JOIN [ContactImages] AS [c0] ON [c].[Id] = [c0].[ContactId]
+ORDER BY [c].[Id]
+2025-09-15 22:43:10.733 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[CustomerLeadApi.DTOs.ContactDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-15 22:43:10.736 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi) in 76.5784ms
+2025-09-15 22:43:10.738 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:43:10.740 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7113/api/contacts - 200 null application/json; charset=utf-8 99.5822ms
+2025-09-15 22:43:23.758 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7113/api/contacts - null null
+2025-09-15 22:43:23.762 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:43:23.763 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:43:23.765 +05:00 [INF] Route matched with {action = "GetContacts", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[CustomerLeadApi.DTOs.ContactDTO]]]] GetContacts() on controller CustomerLeadApi.Controllers.ContactsController (CustomerLeadApi).
+2025-09-15 22:43:23.769 +05:00 [INF] Getting all contacts
+2025-09-15 22:43:23.773 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Email], [c].[Name], [c].[Phone], [c].[Type], [c0].[Id], [c0].[ContactId], [c0].[ContentType], [c0].[FileName], [c0].[ImageData], [c0].[UploadedAt]
+FROM [Contacts] AS [c]
+LEFT JOIN [ContactImages] AS [c0] ON [c].[Id] = [c0].[ContactId]
+ORDER BY [c].[Id]
+2025-09-15 22:43:23.776 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[CustomerLeadApi.DTOs.ContactDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-15 22:43:23.780 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi) in 12.4332ms
+2025-09-15 22:43:23.783 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:43:23.786 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7113/api/contacts - 200 null application/json; charset=utf-8 27.9393ms
+2025-09-15 22:43:59.515 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[CustomerLeadApi.DTOs.ContactDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-15 22:43:59.519 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi) in 66949.0189ms
+2025-09-15 22:43:59.522 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:43:59.523 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7113/api/contacts - 499 null application/json; charset=utf-8 66967.0903ms
+2025-09-15 22:50:25.771 +05:00 [INF] Starting Customer Lead API
+2025-09-15 22:50:26.233 +05:00 [INF] Now listening on: https://localhost:7113
+2025-09-15 22:50:26.240 +05:00 [INF] Now listening on: http://localhost:5004
+2025-09-15 22:50:26.493 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-15 22:50:26.495 +05:00 [INF] Hosting environment: Development
+2025-09-15 22:50:26.497 +05:00 [INF] Content root path: D:\Development\Upwork Task\CustomerLeadMultipleImages\CustomerLeadApi
+2025-09-15 22:50:26.968 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7113/health - null null
+2025-09-15 22:50:27.288 +05:00 [INF] Executing endpoint 'HTTP: GET /health'
+2025-09-15 22:50:27.308 +05:00 [INF] Executed endpoint 'HTTP: GET /health'
+2025-09-15 22:50:27.319 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7113/health - 200 null application/json; charset=utf-8 364.9663ms
+2025-09-15 22:50:56.560 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7113/api/contacts - null null
+2025-09-15 22:50:56.569 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:50:56.572 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:50:56.597 +05:00 [INF] Route matched with {action = "GetContacts", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[CustomerLeadApi.DTOs.ContactDTO]]]] GetContacts() on controller CustomerLeadApi.Controllers.ContactsController (CustomerLeadApi).
+2025-09-15 22:50:57.868 +05:00 [INF] Getting all contacts
+2025-09-15 22:50:59.060 +05:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Email], [c].[Name], [c].[Phone], [c].[Type], [c0].[Id], [c0].[ContactId], [c0].[ContentType], [c0].[FileName], [c0].[ImageData], [c0].[UploadedAt]
+FROM [Contacts] AS [c]
+LEFT JOIN [ContactImages] AS [c0] ON [c].[Id] = [c0].[ContactId]
+ORDER BY [c].[Id]
+2025-09-15 22:50:59.168 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[CustomerLeadApi.DTOs.ContactDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-15 22:50:59.181 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi) in 2576.5267ms
+2025-09-15 22:50:59.184 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:50:59.192 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7113/api/contacts - 200 null application/json; charset=utf-8 2631.7444ms
+2025-09-15 22:51:03.074 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7113/api/contacts/1 - null null
+2025-09-15 22:51:03.076 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7113/api/contacts/1/images - null null
+2025-09-15 22:51:03.080 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:03.081 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:03.081 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContact (CustomerLeadApi)'
+2025-09-15 22:51:03.082 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactImagesController.GetContactImages (CustomerLeadApi)'
+2025-09-15 22:51:03.101 +05:00 [INF] Route matched with {action = "GetContactImages", controller = "ContactImages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[CustomerLeadApi.DTOs.ContactImageDTO]]]] GetContactImages(Int32) on controller CustomerLeadApi.Controllers.ContactImagesController (CustomerLeadApi).
+2025-09-15 22:51:03.101 +05:00 [INF] Route matched with {action = "GetContact", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[CustomerLeadApi.DTOs.ContactDTO]]] GetContact(Int32) on controller CustomerLeadApi.Controllers.ContactsController (CustomerLeadApi).
+2025-09-15 22:51:03.184 +05:00 [INF] Getting contact with ID: 1
+2025-09-15 22:51:03.184 +05:00 [INF] Getting images for contact ID: 1
+2025-09-15 22:51:03.302 +05:00 [INF] Executed DbCommand (79ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Email], [c].[Name], [c].[Phone], [c].[Type]
+FROM [Contacts] AS [c]
+WHERE [c].[Id] = @__p_0
+2025-09-15 22:51:03.302 +05:00 [INF] Executed DbCommand (68ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c1].[Id], [c1].[Email], [c1].[Name], [c1].[Phone], [c1].[Type], [c0].[Id], [c0].[ContactId], [c0].[ContentType], [c0].[FileName], [c0].[ImageData], [c0].[UploadedAt]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Email], [c].[Name], [c].[Phone], [c].[Type]
+    FROM [Contacts] AS [c]
+    WHERE [c].[Id] = @__id_0
+) AS [c1]
+LEFT JOIN [ContactImages] AS [c0] ON [c1].[Id] = [c0].[ContactId]
+ORDER BY [c1].[Id]
+2025-09-15 22:51:03.312 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[CustomerLeadApi.DTOs.ContactDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-15 22:51:03.316 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactsController.GetContact (CustomerLeadApi) in 209.4964ms
+2025-09-15 22:51:03.317 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContact (CustomerLeadApi)'
+2025-09-15 22:51:03.318 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7113/api/contacts/1 - 200 null application/json; charset=utf-8 243.8659ms
+2025-09-15 22:51:03.320 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@__contactId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ContactId], [c].[ContentType], [c].[FileName], [c].[ImageData], [c].[UploadedAt]
+FROM [ContactImages] AS [c]
+WHERE [c].[ContactId] = @__contactId_0
+ORDER BY [c].[UploadedAt]
+2025-09-15 22:51:03.326 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[CustomerLeadApi.DTOs.ContactImageDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-15 22:51:03.329 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactImagesController.GetContactImages (CustomerLeadApi) in 225.7492ms
+2025-09-15 22:51:03.331 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactImagesController.GetContactImages (CustomerLeadApi)'
+2025-09-15 22:51:03.332 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7113/api/contacts/1/images - 200 null application/json; charset=utf-8 255.7439ms
+2025-09-15 22:51:06.676 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7113/api/contacts/1/images - null null
+2025-09-15 22:51:06.679 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:06.681 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7113/api/contacts/1/images - 204 null null 5.0924ms
+2025-09-15 22:51:06.684 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7113/api/contacts/1/images - application/json 133978
+2025-09-15 22:51:06.687 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:06.688 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactImagesController.UploadImage (CustomerLeadApi)'
+2025-09-15 22:51:06.698 +05:00 [INF] Route matched with {action = "UploadImage", controller = "ContactImages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[CustomerLeadApi.DTOs.ContactImageDTO]]] UploadImage(Int32, CustomerLeadApi.DTOs.UploadImageDTO) on controller CustomerLeadApi.Controllers.ContactImagesController (CustomerLeadApi).
+2025-09-15 22:51:06.752 +05:00 [INF] Uploading image for contact ID: 1
+2025-09-15 22:51:06.781 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__contactId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ContactImages] AS [c]
+WHERE [c].[ContactId] = @__contactId_0
+2025-09-15 22:51:06.929 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50), @p2='?' (Size = 100), @p3='?' (Size = -1), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ContactImages] ([ContactId], [ContentType], [FileName], [ImageData], [UploadedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-15 22:51:06.958 +05:00 [INF] Image uploaded successfully with ID: 11 for contact ID: 1
+2025-09-15 22:51:06.961 +05:00 [INF] Executing CreatedAtActionResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[CustomerLeadApi.DTOs.ContactImageDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-15 22:51:06.992 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactImagesController.UploadImage (CustomerLeadApi) in 292.2544ms
+2025-09-15 22:51:06.995 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactImagesController.UploadImage (CustomerLeadApi)'
+2025-09-15 22:51:06.996 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7113/api/contacts/1/images - 201 null application/json; charset=utf-8 312.2722ms
+2025-09-15 22:51:11.180 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7113/api/contacts/1/images/11 - null null
+2025-09-15 22:51:11.184 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:11.186 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7113/api/contacts/1/images/11 - 204 null null 5.728ms
+2025-09-15 22:51:11.188 +05:00 [INF] Request starting HTTP/2 DELETE https://localhost:7113/api/contacts/1/images/11 - null null
+2025-09-15 22:51:11.192 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:11.194 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactImagesController.DeleteImage (CustomerLeadApi)'
+2025-09-15 22:51:11.201 +05:00 [INF] Route matched with {action = "DeleteImage", controller = "ContactImages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse]] DeleteImage(Int32, Int32) on controller CustomerLeadApi.Controllers.ContactImagesController (CustomerLeadApi).
+2025-09-15 22:51:11.208 +05:00 [INF] Deleting image 11 for contact ID: 1
+2025-09-15 22:51:11.218 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__contactId_0='?' (DbType = Int32), @__imageId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ContactId], [c].[ContentType], [c].[FileName], [c].[ImageData], [c].[UploadedAt]
+FROM [ContactImages] AS [c]
+WHERE [c].[ContactId] = @__contactId_0 AND [c].[Id] = @__imageId_1
+2025-09-15 22:51:11.307 +05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [ContactImages]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-09-15 22:51:11.313 +05:00 [INF] Image deleted successfully with ID: 11 for contact ID: 1
+2025-09-15 22:51:11.315 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse'.
+2025-09-15 22:51:11.318 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactImagesController.DeleteImage (CustomerLeadApi) in 115.5532ms
+2025-09-15 22:51:11.319 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactImagesController.DeleteImage (CustomerLeadApi)'
+2025-09-15 22:51:11.319 +05:00 [INF] Request finished HTTP/2 DELETE https://localhost:7113/api/contacts/1/images/11 - 200 null application/json; charset=utf-8 132.0103ms
+2025-09-15 22:51:15.549 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7113/api/contacts/1/images - null null
+2025-09-15 22:51:15.554 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:15.555 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7113/api/contacts/1/images - 204 null null 5.6362ms
+2025-09-15 22:51:15.556 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7113/api/contacts/1/images - application/json 1718930
+2025-09-15 22:51:15.562 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:15.562 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactImagesController.UploadImage (CustomerLeadApi)'
+2025-09-15 22:51:15.563 +05:00 [INF] Route matched with {action = "UploadImage", controller = "ContactImages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[CustomerLeadApi.DTOs.ContactImageDTO]]] UploadImage(Int32, CustomerLeadApi.DTOs.UploadImageDTO) on controller CustomerLeadApi.Controllers.ContactImagesController (CustomerLeadApi).
+2025-09-15 22:51:15.583 +05:00 [INF] Uploading image for contact ID: 1
+2025-09-15 22:51:15.589 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__contactId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ContactImages] AS [c]
+WHERE [c].[ContactId] = @__contactId_0
+2025-09-15 22:51:15.628 +05:00 [INF] Executed DbCommand (33ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50), @p2='?' (Size = 100), @p3='?' (Size = -1), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ContactImages] ([ContactId], [ContentType], [FileName], [ImageData], [UploadedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-15 22:51:15.630 +05:00 [INF] Image uploaded successfully with ID: 12 for contact ID: 1
+2025-09-15 22:51:15.632 +05:00 [INF] Executing CreatedAtActionResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[CustomerLeadApi.DTOs.ContactImageDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-15 22:51:15.640 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactImagesController.UploadImage (CustomerLeadApi) in 75.1695ms
+2025-09-15 22:51:15.641 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactImagesController.UploadImage (CustomerLeadApi)'
+2025-09-15 22:51:15.643 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7113/api/contacts/1/images - 201 null application/json; charset=utf-8 86.1791ms
+2025-09-15 22:51:21.605 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7113/api/contacts/1/images - null null
+2025-09-15 22:51:21.608 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:21.608 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7113/api/contacts/1/images - 204 null null 3.2263ms
+2025-09-15 22:51:21.610 +05:00 [INF] Request starting HTTP/2 POST https://localhost:7113/api/contacts/1/images - application/json 1718930
+2025-09-15 22:51:21.614 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:21.614 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactImagesController.UploadImage (CustomerLeadApi)'
+2025-09-15 22:51:21.615 +05:00 [INF] Route matched with {action = "UploadImage", controller = "ContactImages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[CustomerLeadApi.DTOs.ContactImageDTO]]] UploadImage(Int32, CustomerLeadApi.DTOs.UploadImageDTO) on controller CustomerLeadApi.Controllers.ContactImagesController (CustomerLeadApi).
+2025-09-15 22:51:21.624 +05:00 [INF] Uploading image for contact ID: 1
+2025-09-15 22:51:21.627 +05:00 [INF] Executed DbCommand (0ms) [Parameters=[@__contactId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ContactImages] AS [c]
+WHERE [c].[ContactId] = @__contactId_0
+2025-09-15 22:51:21.652 +05:00 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50), @p2='?' (Size = 100), @p3='?' (Size = -1), @p4='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [ContactImages] ([ContactId], [ContentType], [FileName], [ImageData], [UploadedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-15 22:51:21.653 +05:00 [INF] Image uploaded successfully with ID: 13 for contact ID: 1
+2025-09-15 22:51:21.654 +05:00 [INF] Executing CreatedAtActionResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[CustomerLeadApi.DTOs.ContactImageDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-15 22:51:21.661 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactImagesController.UploadImage (CustomerLeadApi) in 45.0742ms
+2025-09-15 22:51:21.662 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactImagesController.UploadImage (CustomerLeadApi)'
+2025-09-15 22:51:21.664 +05:00 [INF] Request finished HTTP/2 POST https://localhost:7113/api/contacts/1/images - 201 null application/json; charset=utf-8 53.1834ms
+2025-09-15 22:51:24.859 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7113/api/contacts/1/images/13 - null null
+2025-09-15 22:51:24.862 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:24.863 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7113/api/contacts/1/images/13 - 204 null null 4.3469ms
+2025-09-15 22:51:24.865 +05:00 [INF] Request starting HTTP/2 DELETE https://localhost:7113/api/contacts/1/images/13 - null null
+2025-09-15 22:51:24.869 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:24.870 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactImagesController.DeleteImage (CustomerLeadApi)'
+2025-09-15 22:51:24.872 +05:00 [INF] Route matched with {action = "DeleteImage", controller = "ContactImages"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse]] DeleteImage(Int32, Int32) on controller CustomerLeadApi.Controllers.ContactImagesController (CustomerLeadApi).
+2025-09-15 22:51:24.875 +05:00 [INF] Deleting image 13 for contact ID: 1
+2025-09-15 22:51:24.878 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__contactId_0='?' (DbType = Int32), @__imageId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ContactId], [c].[ContentType], [c].[FileName], [c].[ImageData], [c].[UploadedAt]
+FROM [ContactImages] AS [c]
+WHERE [c].[ContactId] = @__contactId_0 AND [c].[Id] = @__imageId_1
+2025-09-15 22:51:27.107 +05:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [ContactImages]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-09-15 22:51:27.109 +05:00 [INF] Image deleted successfully with ID: 13 for contact ID: 1
+2025-09-15 22:51:27.110 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse'.
+2025-09-15 22:51:27.111 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactImagesController.DeleteImage (CustomerLeadApi) in 2237.0823ms
+2025-09-15 22:51:27.111 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactImagesController.DeleteImage (CustomerLeadApi)'
+2025-09-15 22:51:27.112 +05:00 [INF] Request finished HTTP/2 DELETE https://localhost:7113/api/contacts/1/images/13 - 200 null application/json; charset=utf-8 2247.2796ms
+2025-09-15 22:51:30.170 +05:00 [INF] Request starting HTTP/2 GET https://localhost:7113/api/contacts - null null
+2025-09-15 22:51:30.173 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:51:30.174 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:51:30.176 +05:00 [INF] Route matched with {action = "GetContacts", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse`1[System.Collections.Generic.IEnumerable`1[CustomerLeadApi.DTOs.ContactDTO]]]] GetContacts() on controller CustomerLeadApi.Controllers.ContactsController (CustomerLeadApi).
+2025-09-15 22:51:30.182 +05:00 [INF] Getting all contacts
+2025-09-15 22:51:30.188 +05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Email], [c].[Name], [c].[Phone], [c].[Type], [c0].[Id], [c0].[ContactId], [c0].[ContentType], [c0].[FileName], [c0].[ImageData], [c0].[UploadedAt]
+FROM [Contacts] AS [c]
+LEFT JOIN [ContactImages] AS [c0] ON [c].[Id] = [c0].[ContactId]
+ORDER BY [c].[Id]
+2025-09-15 22:51:32.316 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse`1[[System.Collections.Generic.IEnumerable`1[[CustomerLeadApi.DTOs.ContactDTO, CustomerLeadApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-15 22:51:32.318 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi) in 2141.0016ms
+2025-09-15 22:51:32.319 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactsController.GetContacts (CustomerLeadApi)'
+2025-09-15 22:51:32.320 +05:00 [INF] Request finished HTTP/2 GET https://localhost:7113/api/contacts - 200 null application/json; charset=utf-8 2149.9408ms
+2025-09-15 22:53:37.480 +05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7113/api/contacts/1 - null null
+2025-09-15 22:53:37.484 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:53:37.485 +05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7113/api/contacts/1 - 204 null null 5.29ms
+2025-09-15 22:53:37.487 +05:00 [INF] Request starting HTTP/2 DELETE https://localhost:7113/api/contacts/1 - null null
+2025-09-15 22:53:37.491 +05:00 [INF] CORS policy execution successful.
+2025-09-15 22:53:37.492 +05:00 [INF] Executing endpoint 'CustomerLeadApi.Controllers.ContactsController.DeleteContact (CustomerLeadApi)'
+2025-09-15 22:53:37.498 +05:00 [INF] Route matched with {action = "DeleteContact", controller = "Contacts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CustomerLeadApi.Common.ApiResponse]] DeleteContact(Int32) on controller CustomerLeadApi.Controllers.ContactsController (CustomerLeadApi).
+2025-09-15 22:53:37.501 +05:00 [INF] Deleting contact with ID: 1
+2025-09-15 22:53:37.504 +05:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Email], [c].[Name], [c].[Phone], [c].[Type]
+FROM [Contacts] AS [c]
+WHERE [c].[Id] = @__p_0
+2025-09-15 22:53:37.523 +05:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Contacts]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-09-15 22:53:37.525 +05:00 [INF] Contact deleted successfully with ID: 1
+2025-09-15 22:53:37.525 +05:00 [INF] Executing OkObjectResult, writing value of type 'CustomerLeadApi.Common.ApiResponse'.
+2025-09-15 22:53:37.526 +05:00 [INF] Executed action CustomerLeadApi.Controllers.ContactsController.DeleteContact (CustomerLeadApi) in 27.0452ms
+2025-09-15 22:53:37.527 +05:00 [INF] Executed endpoint 'CustomerLeadApi.Controllers.ContactsController.DeleteContact (CustomerLeadApi)'
+2025-09-15 22:53:37.528 +05:00 [INF] Request finished HTTP/2 DELETE https://localhost:7113/api/contacts/1 - 200 null application/json; charset=utf-8 41.1362ms
