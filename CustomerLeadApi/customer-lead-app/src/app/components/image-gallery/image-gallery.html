@@ -1,0 +1,76 @@
+<div class="image-gallery">
+  <div *ngIf="images.length === 0" class="empty-gallery">
+    <p>No images uploaded yet. Upload some images to see them here!</p>
+  </div>
+
+  <div class="gallery-grid" *ngIf="images.length > 0">
+    <div 
+      class="image-item" 
+      *ngFor="let image of images; let i = index"
+      (click)="openModal(image, i)">
+      <img 
+        [src]="getImageUrl(image.imageData)" 
+        [alt]="image.fileName || 'Contact image'"
+        loading="lazy">
+      <div class="image-overlay">
+        <div class="image-info">
+          <p class="image-name">{{ image.fileName || 'Untitled' }}</p>
+          <p class="image-date">{{ formatDate(image.uploadedAt) }}</p>
+        </div>
+        <button 
+          class="delete-btn" 
+          (click)="deleteImage(image.id, $event)"
+          title="Delete image">
+          ✕
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-overlay" *ngIf="selectedImage()" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <div class="modal-header">
+        <h3>{{ selectedImage()?.fileName || 'Untitled' }}</h3>
+        <button class="close-btn" (click)="closeModal()">✕</button>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-navigation">
+          <button 
+            class="nav-btn prev-btn" 
+            (click)="previousImage()"
+            [disabled]="images.length <= 1">
+            ‹
+          </button>
+          
+          <img 
+            [src]="getImageUrl(selectedImage()?.imageData || '')" 
+            [alt]="selectedImage()?.fileName || 'Contact image'"
+            class="modal-image">
+          
+          <button 
+            class="nav-btn next-btn" 
+            (click)="nextImage()"
+            [disabled]="images.length <= 1">
+            ›
+          </button>
+        </div>
+        
+        <div class="modal-info">
+          <p><strong>Uploaded:</strong> {{ formatDate(selectedImage()?.uploadedAt!) }}</p>
+          <p><strong>Type:</strong> {{ selectedImage()?.contentType || 'Unknown' }}</p>
+          <p class="image-counter">{{ currentIndex() + 1 }} of {{ images.length }}</p>
+        </div>
+      </div>
+      
+      <div class="modal-actions">
+        <button 
+          class="btn btn-danger" 
+          (click)="deleteImage(selectedImage()?.id || 0, $event)">
+          Delete Image
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

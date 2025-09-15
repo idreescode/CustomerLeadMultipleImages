@@ -1,0 +1,113 @@
+<div class="contact-list-container">
+  <div class="header">
+    <h2>Contacts</h2>
+    <button class="btn btn-primary" (click)="toggleForm()">
+      {{ showForm() ? 'Cancel' : 'Add Contact' }}
+    </button>
+  </div>
+
+  <!-- Success Message -->
+  <div class="alert alert-success" *ngIf="success()">
+    {{ success() }}
+  </div>
+
+  <!-- Error Message -->
+  <div class="alert alert-error" *ngIf="error()">
+    {{ error() }}
+  </div>
+
+  <!-- Add Contact Form -->
+  <div class="form-container" *ngIf="showForm()">
+    <h3>Add New Contact</h3>
+    <form (ngSubmit)="createContact()" #contactForm="ngForm">
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input 
+          type="text" 
+          id="name" 
+          [(ngModel)]="newContact.name" 
+          name="name"
+          required
+          class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          [(ngModel)]="newContact.email" 
+          name="email"
+          class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input 
+          type="tel" 
+          id="phone" 
+          [(ngModel)]="newContact.phone" 
+          name="phone"
+          class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="type">Type</label>
+        <select 
+          id="type" 
+          [(ngModel)]="newContact.type" 
+          name="type"
+          class="form-control">
+          <option [value]="ContactType.Customer">Customer</option>
+          <option [value]="ContactType.Lead">Lead</option>
+        </select>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary" [disabled]="!contactForm.valid">
+          Create Contact
+        </button>
+        <button type="button" class="btn btn-secondary" (click)="toggleForm()">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Loading State -->
+  <div class="loading" *ngIf="loading()">
+    <p>Loading contacts...</p>
+  </div>
+
+  <!-- Contacts Grid -->
+  <div class="contacts-grid" *ngIf="!loading()">
+    <div class="contact-card" *ngFor="let contact of contacts()">
+      <div class="contact-header">
+        <h3>{{ contact.name }}</h3>
+        <span class="contact-type" [class]="'type-' + contact.type">
+          {{ getContactTypeLabel(contact.type) }}
+        </span>
+      </div>
+      
+      <div class="contact-details">
+        <p *ngIf="contact.email"><strong>Email:</strong> {{ contact.email }}</p>
+        <p *ngIf="contact.phone"><strong>Phone:</strong> {{ contact.phone }}</p>
+        <p><strong>Images:</strong> {{ contact.imageCount }}/10</p>
+      </div>
+
+      <div class="contact-actions">
+        <a [routerLink]="['/contacts', contact.id]" class="btn btn-primary">
+          View Details
+        </a>
+        <button class="btn btn-danger" (click)="deleteContact(contact.id)">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Empty State -->
+  <div class="empty-state" *ngIf="!loading() && contacts().length === 0">
+    <p>No contacts found. Create your first contact to get started!</p>
+  </div>
+</div>

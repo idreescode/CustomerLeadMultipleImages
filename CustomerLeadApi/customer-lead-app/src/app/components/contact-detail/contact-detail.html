@@ -1,0 +1,67 @@
+<div class="contact-detail-container">
+  <div class="header">
+    <a routerLink="/contacts" class="back-link">← Back to Contacts</a>
+  </div>
+
+  <!-- Success Message -->
+  <div class="alert alert-success" *ngIf="success()">
+    {{ success() }}
+  </div>
+
+  <!-- Error Message -->
+  <div class="alert alert-error" *ngIf="error()">
+    {{ error() }}
+  </div>
+
+  <div *ngIf="loading()" class="loading">
+    <p>Loading contact...</p>
+  </div>
+
+  <div *ngIf="!loading() && contact()" class="contact-detail">
+    <div class="contact-info">
+      <div class="contact-header">
+        <h1>{{ contact()?.name }}</h1>
+        <span class="contact-type" [class]="'type-' + contact()?.type">
+          {{ getContactTypeLabel(contact()?.type || 0) }}
+        </span>
+      </div>
+      
+      <div class="contact-details">
+        <p *ngIf="contact()?.email"><strong>Email:</strong> {{ contact()?.email }}</p>
+        <p *ngIf="contact()?.phone"><strong>Phone:</strong> {{ contact()?.phone }}</p>
+        <p><strong>Images:</strong> {{ images().length }}/10</p>
+      </div>
+    </div>
+
+    <div class="image-section">
+      <div class="section-header">
+        <h2>Images</h2>
+        <div class="upload-controls" *ngIf="canUploadMore()">
+          <input 
+            type="file" 
+            id="imageUpload" 
+            multiple 
+            accept="image/*" 
+            (change)="onFileSelected($event)"
+            #fileInput
+            style="display: none;">
+          <button 
+            class="btn btn-primary" 
+            (click)="fileInput.click()"
+            [disabled]="uploading()">
+            {{ uploading() ? 'Uploading...' : 'Upload Images' }}
+          </button>
+        </div>
+      </div>
+
+      <div *ngIf="!canUploadMore()" class="max-images-notice">
+        <p>Maximum number of images (10) reached for this contact.</p>
+      </div>
+
+      <app-image-gallery 
+        [images]="images()" 
+        (imageDeleted)="onImageDeleted($event)">
+      </app-image-gallery>
+    </div>
+  </div>
+</div>
