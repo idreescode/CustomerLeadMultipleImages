@@ -76,7 +76,10 @@
 
   <!-- Loading State -->
   <div class="loading" *ngIf="loading()">
-    <p>Loading contacts...</p>
+    <div class="loader">
+      <div class="spinner"></div>
+      <p>Loading contacts...</p>
+    </div>
   </div>
 
   <!-- Contacts Grid -->

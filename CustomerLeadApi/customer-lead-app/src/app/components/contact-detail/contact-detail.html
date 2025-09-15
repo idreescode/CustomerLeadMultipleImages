@@ -14,7 +14,10 @@
   </div>
 
   <div *ngIf="loading()" class="loading">
-    <p>Loading contact...</p>
+    <div class="loader">
+      <div class="spinner"></div>
+      <p>Loading contact...</p>
+    </div>
   </div>
 
   <div *ngIf="!loading() && contact()" class="contact-detail">
@@ -49,6 +52,7 @@
             class="btn btn-primary" 
             (click)="fileInput.click()"
             [disabled]="uploading()">
+            <span *ngIf="uploading()" class="upload-spinner"></span>
             {{ uploading() ? 'Uploading...' : 'Upload Images' }}
           </button>
         </div>
